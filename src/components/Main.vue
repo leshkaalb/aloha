@@ -1,40 +1,63 @@
 <template>
     <main class="main">
+        <img class="leaf-left" src="../assets/listok.png" alt="Leaf decoration">
         <div class="container">
             <div class="content">
-                <h1 class="title">Organic Fruit & Vegetables</h1>
-                <p class="description">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.  
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley...
-                </p>
+                <div class="main-content">
+                    <h1 class="title">Organic Fruit & Vegetables</h1>
+                    <p class="description">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.  
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley...
+                    </p>
+                    <div class="order-btn">
+                        Order Now
+                        <img src="" alt="">
+                    </div>
+                    
+                    <div class="stats">
+                        <img class="vegetables__img" src="../assets/vegetables.png"> 
+                        <div class="stat-item">
+                            <div class="stat-number">30K</div>
+                            <div class="stat-label">User Order</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">20K</div>
+                            <div class="stat-label">Reviews(4.8)</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">300</div>
+                            <div class="stat-label">Items</div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
     </main>
 </template>
 
 <script setup>
+
 </script>
 
 <style scoped>
-.main {
-    width: 100%;
-    background-color: #F3FBF8;
-    margin-top: 20px;
-}
-
 .container {
-    max-width: 1240px;
+    background-color: #F3FBF8;
     width: 100%;
     margin: 0 auto;
     padding: 92px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+.leaf-left {
+    position: absolute;
+    left: 250px;
+    top: 103px;
 }
 
-.content {
+.main-content {
     text-align: center;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
 }
 
 .title {
@@ -42,41 +65,29 @@
     font-weight: bold;
     color: #333;
     margin-bottom: 24px;
-
 }
 
 .description {
     font-size: 18px;
     color: #666;
-    line-height: 1.6;
     margin-bottom: 32px;
-    max-width: 500px;
+    max-width: 40rem;
     margin-left: auto;
     margin-right: auto;
 }
 
 .order-btn {
-    background-color: #09A66D;
-    color: white;
-    border: none;
     padding: 16px 32px;
-    border-radius: 8px;
     font-size: 18px;
-    font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.3s ease;
     margin-bottom: 60px;
 }
 
-.order-btn:hover {
-    background-color: #078857;
-}
 
 .stats {
     display: flex;
     justify-content: center;
     gap: 60px;
-    margin-top: 40px;
 }
 
 .stat-item {
